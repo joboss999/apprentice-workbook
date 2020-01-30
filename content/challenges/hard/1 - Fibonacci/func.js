@@ -15,5 +15,5 @@ module.exports = (n) => {
             fibsequence[index] = fibsequence[index - 2] + fibsequence[index - 1];
         }
     }
-    return fibsequence[n];
+    return fibsequence[n]; 
 }
