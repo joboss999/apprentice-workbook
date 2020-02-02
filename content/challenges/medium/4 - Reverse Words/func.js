@@ -54,10 +54,9 @@ module.exports = (str) => {
     function makenewword(word){
         let letters = word.split('');
         let newarr = letters.reverse();
-        let newword = '';
-        newarr.forEach(reverseword = (letter) => {
-            newword = newword + letter;
-        })
+        let newword = newarr.reduce( (makingnewword, letter) => {
+            return makingnewword + letter;
+        }, '')
         return newword;      
     }
     return newstr;
