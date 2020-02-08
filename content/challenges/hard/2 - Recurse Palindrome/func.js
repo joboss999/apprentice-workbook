@@ -40,5 +40,5 @@ module.exports = (str) => {
       return false;
     }
   }
-  return palin(str);
+  return palin(str); 
 }
