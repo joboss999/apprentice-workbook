@@ -5,15 +5,5 @@
 //   - Ignore letter case (should not be case sensitive).
 //   - All test cases contain valid one word strings.
 module.exports = (str) => {
-    for (let letter = 0; letter < str.length; letter++){
-        for (let otherletter = letter + 1; otherletter < str.length; otherletter++){
-            if (letter < str.length - 2 && str[letter] != str[letter+1]){   
-                if (str[letter].toUpperCase() == str[otherletter].toUpperCase()){
-                    return false;
-                }
-            } else {
-                return true;
-            }
-        }
-    }
+    //Put Code Here
 }

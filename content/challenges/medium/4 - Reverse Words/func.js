@@ -4,32 +4,5 @@
 // Notes:
 //   - You can expect a valid string to be provided for each test case.
 module.exports = (str) => {
-    let splitstr = str.split(' ');
-    let newstr = '';
-    for (let word = 0; word < splitstr.length; word++){
-        let wordsize = splitstr[word].length;
-        let actualword = splitstr[word];
-        if (word > 0){
-            if (wordsize >=5){
-                let newword = '';
-                for (let letter = 0; letter < wordsize; letter++){
-                    newword = newword + actualword[wordsize - 1 - letter]
-                }
-                newstr = newstr + ' ' + newword;
-            } else {
-                newstr = newstr + ' ' + splitstr[word];
-            }
-        } else {
-            if (wordsize >=5){
-                let newword = '';
-                for (let letter = 0; letter < wordsize; letter++){
-                    newword = newword + actualword[wordsize - 1 - letter]
-                }
-                newstr = newstr + newword;
-            } else {
-                newstr = newstr + splitstr[word];
-            }
-        }
-    }
-    return newstr
+    //Put Code Here
 }
